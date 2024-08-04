@@ -1,6 +1,3 @@
-Natürlich! Hier ist die aktualisierte `README.md`-Datei:
-
-```markdown
 # Silica Server Docker Setup
 
 This repository provides a Docker setup for running the Silica server on Ubuntu 24.04. It uses Docker Compose to simplify the setup and management of the server, allowing you to configure server settings through environment variables.
