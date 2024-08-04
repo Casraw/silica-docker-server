@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  silica-server:
+    build: .
+    environment:
+      SERVER_NAME: "test server"
+      CURRENT_GAME_MODE: "MP_Strategy"
+      SINGLEPLAYER: "false"
+      PASSWORD_PROTECTED: "false"
+      SERVER_PASSWORD: "true"
+      GAME_PORT: "26901"
+      QUERY_PORT: "26900"
+      DEATHMATCH_MAP: "MonumentValley"
+      DEATHMATCH_MAP_LIST: "Badlands CombatDome GreatErg MonumentValley NarakaCity ProvingGrounds RiftBasin RiftBasinTerrainOnly"
+      DEATHMATCH_MAX_PLAYERS: "32"
+      PROSPECTOR_MAP: "RiftBasin"
+      PROSPECTOR_MAP_LIST: "ProspectorTest RiftBasin"
+      PROSPECTOR_MAX_PLAYERS: "4"
+      SANDBOX_MAP: "MonumentValley"
+      SANDBOX_MAP_LIST: "AssetTest Badlands CombatDome GreatErg MainMenuNoMenu MonumentValley NarakaCity ProspectorTest ProvingGrounds RiftBasin SiegeMap SmallStrategyTest"
+      SANDBOX_MAX_PLAYERS: "12"
+      STRATEGY_MAP: "MonumentValley"
+      STRATEGY_MAP_LIST: "Badlands GreatErg MonumentValley NarakaCity RiftBasin RiftBasinTerrainOnly SmallStrategyTest"
+      STRATEGY_MAX_PLAYERS: "12"
+      TOWER_DEFENSE_MAP: "SiegeMap"
+      TOWER_DEFENSE_MAP_LIST: "SiegeMap SmallStrategyTest"
+      TOWER_DEFENSE_MAX_PLAYERS: "12"
+    ports:
+      - "26900:26900"
+      - "26901:26901"
